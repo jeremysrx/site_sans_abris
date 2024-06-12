@@ -1,0 +1,225 @@
+/* Applique une marge et un padding de 0 à tous les éléments et utilise border-box pour inclure les bordures et le padding dans la largeur et la hauteur totale des éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Définie la largeur maximale du corps de la page, centre-le et s'assure qu'il prend toute la hauteur disponible */
+body {
+    max-width: 800px;
+    margin: 0 auto; /* Centre le corps de la page horizontalement */
+    height: 100%;
+}
+
+/* Définit la police principale pour le document HTML et ajoute un défilement fluide pour les ancres */
+html {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Style pour les titres de niveau 1 avec une marge et une couleur spécifique */
+h1 {
+    margin: 50px 20px;
+    color: #34495e;
+}
+
+/* Style pour les titres de niveau 2 avec une marge et une couleur spécifique */
+h2 {
+    margin: 30px 20px;
+    color: #34495e;
+}
+
+/* Style pour les titres de niveau 3 avec une marge spécifique */
+h3 {
+    margin: 30px 0;
+}
+
+/* Style pour les paragraphes avec alignement justifié et une largeur définie */
+p {
+    text-align: justify;
+    width: 100%; /* Utilise 100% de la largeur disponible */
+    margin: 30px 0;
+}
+
+/* Style pour la barre de navigation, incluant marge, position, dimensions, couleur de fond et bordure arrondie */
+nav {
+    margin: 30px auto 0;
+    position: relative;
+    width: 600px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+/* Applique une bordure arrondie aux images de classe image_ronde */
+.image_ronde {
+    border-radius: 50%;
+}
+
+/* Style pour les liens de navigation avec hauteur de ligne, taille de police, position, couleur, etc. */
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+/* Définit une largeur fixe pour chaque lien de navigation */
+a:nth-child(1) {
+    width: 120px;
+}
+
+a:nth-child(2) {
+    width: 120px;
+}
+
+a:nth-child(3) {
+    width: 120px;
+}
+
+a:nth-child(4) {
+    width: 120px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+/* Styles pour le lien actif avec couleurs correspondantes et coins arrondis */
+nav a.active:nth-child(1) {
+    background-color: #1abc9c;
+    border-radius: 8px;
+}
+
+nav a.active:nth-child(2) {
+    background-color: #e74c3c;
+    border-radius: 8px;
+}
+
+nav a.active:nth-child(3) {
+    background-color: #3498db;
+    border-radius: 8px;
+}
+
+nav a.active:nth-child(4) {
+    background-color: #9b59b6;
+    border-radius: 8px;
+}
+
+nav a.active:nth-child(5) {
+    background-color: #e67e22;
+    border-radius: 8px;
+}
+
+/* Centre les titres avec la classe centered-title */
+.centered-title {
+    text-align: center;
+}
+
+/* Centre les contenus avec la classe map-container et ajoute une marge en haut */
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Centre les images dans les maisons d'accueil */
+.centered-content {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Centre les images sur la page d'accueil */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Ajoute un espace entre les images */
+}
+
+/* Applique une bordure arrondie et une marge aux images de classe image_ronde */
+.background-image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.image1 {
+    background-image: url('./images/explorer_site_web.jpeg');
+}
+
+.image2 {
+    background-image: url('./images/contact.png');
+}
+
+.image3 {
+    background-image: url('./images/recherche_logement.jpeg');
+}
+
+/* Définit la taille du logo W3C */
+.logo_w3c {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style pour le tableau de logement */
+.tableau_logement {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Applique un fond différent pour les lignes impaires du tableau */
+.tableau_logement tr:nth-child(odd) {
+    background-color: #ceefe8;
+}
+
+/* Définit le style des listes non ordonnées */
+ul {
+    list-style-type: disc;
+}
+
+/* Définit les marges pour les éléments de liste */
+li {
+    margin: 20px 50px;
+}
+
+/* Style pour les tableaux */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* Style pour le bouton de retour au début */
+.btn_default {
+    background-color: #1abc9c;
+    color: #f8f8f8;
+}
+
+/* Style pour le pied de page */
+footer {
+    flex-shrink: 0;
+    background: #1abc9c;
+    color: #f8f8f8;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto 10px; /* Centre le pied de page horizontalement */
+}
